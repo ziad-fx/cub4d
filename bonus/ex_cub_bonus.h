@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 12:38:24 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/27 00:15:47 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/27 00:24:01 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -160,7 +160,7 @@ void	horizontal_ray(t_player *player);
 void	draw_ray(t_pixel *pixel, int ray_x, int ray_y, int color);
 void	drawing_wall(t_player *player, t_pixel *pixel, int i, double ray_angle);
 double	calculate_distance(double px, double py, double dx, double dy);
-void	exit_all(t_player *player, int f);
+void	exit_all(t_player *player, int f, char *s);
 int		is_wall(t_data *data, double x, double y);
 
 int		load_texture(t_player *player);

@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 10:21:17 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 23:20:45 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/27 00:22:50 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,18 +74,17 @@ static int	load_texture_ea(t_player *player)
 
 int	load_texture(t_player *player)
 {
-	// free_text(player);
 	if (load_texture_no(player) == 1)
-		exit_all(player, 1);
+		exit_all(player, 1, "faild to load no");
 	if (load_texture_so(player) == 1)
-		exit_all(player, 1);
+		exit_all(player, 1, "faild to load so");
 	if (load_texture_we(player) == 1)
-		exit_all(player, 1);
+		exit_all(player, 1, "faild to load we");
 	if (load_texture_ea(player) == 1)
-		exit_all(player, 1);
+		exit_all(player, 1, "faild to load ea");
 	if (load_door(player) == 1)
-		exit_all(player, 1);
+		exit_all(player, 1, "faild to load door");
 	if (load_text_animation(player) == 1)
-		exit_all(player, 1);
+		exit_all(player, 1, "faild to load animation");
 	return (0);
 }

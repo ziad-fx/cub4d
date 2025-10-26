@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 16:38:14 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/27 00:13:42 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/27 00:26:20 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_error(char *s)
 
 int	destroy(t_player *player)
 {
-	exit_all(player, 0);
+	exit_all(player, 0, NULL);
 	return (0);
 }
 
@@ -55,6 +55,6 @@ int	start(t_data *data)
 	draw_map_bonus(&pixel, &new_mlx, &player, &new_pixel);
 	mlx_action(&player);
 	mlx_loop(new_mlx.mlx);
-	exit_all(&player, 0);
+	exit_all(&player, 0, NULL);
 	return (0);
 }
