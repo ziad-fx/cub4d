@@ -6,11 +6,11 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 17:19:41 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 17:45:23 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 22:31:33 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ex_cub.h"
+#include "../ex_cub_bonus.h"
 
 int	load_text_animation(t_player *player)
 {

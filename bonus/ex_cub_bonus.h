@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ex_cub.h                                           :+:      :+:    :+:   */
+/*   ex_cub_bonus.h                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 12:38:24 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/26 19:34:56 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 22:33:07 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef EX_CUB_H
-# define EX_CUB_H
-# include "cub.h"
+#ifndef EX_CUB_BONUS_H
+# define EX_CUB_BONUS_H
+# include "cub_bonus.h"
 # include <mlx.h>
 # include <math.h>
 

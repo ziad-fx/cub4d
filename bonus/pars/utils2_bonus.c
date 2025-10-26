@@ -6,11 +6,11 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 12:18:12 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 18:54:40 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 22:30:38 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../cub.h"
+#include "../cub_bonus.h"
 
 int	pars_line_helper(char *line, int *type, char **path)
 {

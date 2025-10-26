@@ -6,11 +6,11 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 13:43:59 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 17:46:00 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 22:30:41 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../cub.h"
+#include "../cub_bonus.h"
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {

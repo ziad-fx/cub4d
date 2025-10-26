@@ -6,11 +6,11 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 17:52:31 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 21:28:37 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 22:31:43 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ex_cub.h"
+#include "../ex_cub_bonus.h"
 
 void	free_data(t_data *data)
 {

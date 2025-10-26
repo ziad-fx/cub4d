@@ -6,11 +6,11 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/28 13:32:50 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 17:45:23 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 22:31:32 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ex_cub.h"
+#include "../ex_cub_bonus.h"
 
 int	get_text_y(double tex_height, double text_pos, t_player *player)
 {

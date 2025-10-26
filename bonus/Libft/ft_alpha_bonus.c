@@ -6,11 +6,11 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/21 11:00:48 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 19:08:28 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 22:30:49 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../cub.h"
+#include "../cub_bonus.h"
 
 int	ft_isalpha(int c)
 {

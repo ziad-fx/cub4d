@@ -6,11 +6,11 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 12:11:31 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 20:16:28 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 22:31:42 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ex_cub.h"
+#include "../ex_cub_bonus.h"
 
 int	check_num(char *num)
 {

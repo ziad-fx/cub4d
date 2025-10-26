@@ -112,18 +112,12 @@ mandatory/%.o: mandatory/%.c $(HEADER)
 bonus/%.o: bonus/%.c $(HEADER2)
 	$(CC) $(CFLAGS) -c $< -o $@
 
-clean_bonus:
-	rm -f $(B_OBJS)
-
 clean:
-	rm -f $(OBJS)
-
-fclean_bonus: clean_bonus
-	rm -f $(NAME_BONUS)
+	rm -f $(OBJS) $(B_OBJS)
 
 fclean: clean
-	rm -f $(NAME)
+	rm -f $(NAME) $(NAME_BONUS)
 
 re: fclean all
 
-re_bonus: fclean_bonus bonus
+re_bonus: fclean bonus
