@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 12:38:24 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/26 17:54:35 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 17:58:32 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -187,5 +187,6 @@ int		load_door(t_player *player);
 int		get_pixel_color(char *text_side, int text_x,
 			int text_y, t_player *player);
 int		door_next_space(t_data *data, int x, int y);
+void	ft_print_error(char *s);
 
 #endif

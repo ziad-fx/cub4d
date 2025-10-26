@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 12:39:00 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/26 17:52:15 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 18:45:05 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,7 +120,7 @@ void	init_data(t_data *data);
 int		parsing_part(t_data *data, char *file_name);
 int		valid_file(t_data *data);
 int		pars_map(char *line, t_data *data);
-int		pars_line_helper(char *line, int *type, char **path, t_data *data);
+int	pars_line_helper(char *line, int *type, char **path);
 int		valid_map(t_data *data);
 int		valid_chars(char *line, int *player, int flag);
 int		all_walls(char *line);

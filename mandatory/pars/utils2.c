@@ -6,20 +6,19 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 12:18:12 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 17:46:00 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 19:03:30 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../cub.h"
 
-int	pars_line_helper(char *line, int *type, char **path, t_data *data)
+int	pars_line_helper(char *line, int *type, char **path)
 {
 	int		i;
 	int		j;
 	char	*tmp;
 
 	i = 0;
-	(void)data;
 	extract_path(line, &i, &j);
 	tmp = malloc(j - i + 1);
 	if (!tmp)
@@ -37,6 +36,8 @@ int	pars_line_helper(char *line, int *type, char **path, t_data *data)
 	*path = ft_strdup(&line[j]);
 	if (!*path)
 		return (1);
+	if (*type == 1)
+		return (ft_error("invalid character"), 1);
 	return (0);
 }
 

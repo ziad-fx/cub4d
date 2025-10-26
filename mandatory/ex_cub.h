@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 12:38:24 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/26 17:51:07 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 18:16:06 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ typedef struct s_pixel
 typedef struct s_mini_data
 {
 	int	color;
-	int	size; 
+	int	size;
 }	t_mini_data;
 
 typedef struct s_mlx

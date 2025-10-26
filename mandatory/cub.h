@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 12:39:00 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/26 10:51:09 by zyahansa         ###   ########.fr       */
+/*   Updated: 2025/10/26 18:43:30 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,7 +120,7 @@ void	init_data(t_data *data);
 int		parsing_part(t_data *data, char *file_name);
 int		valid_file(t_data *data);
 int		pars_map(char *line, t_data *data);
-int		pars_line_helper(char *line, int *type, char **path, t_data *data);
+int		pars_line_helper(char *line, int *type, char **path);
 int		valid_map(t_data *data);
 int		valid_chars(char *line, int *player, int flag);
 int		all_walls(char *line);
@@ -148,7 +148,7 @@ int		check_surrounded(t_data *data, int x, int y);
 int		is_out_of_bounds(t_data *data, int x, int y);
 int		zero_next_to_space(t_data *data, int x, int y);
 int		count_comma(char *line);
-
+void	ft_error(char *s);
 ////////////////////////////libft////////////////////////////
 
 int		ft_atoi(const char *str);

@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 10:59:54 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 17:46:01 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 18:45:41 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int	pars_map(char *line, t_data *data)
 
 	if (!line || !data)
 		return (1);
-	if (pars_line_helper(line, &type, &path, data) != 0)
+	if (pars_line_helper(line, &type, &path) != 0)
 		return (1);
 	free(path);
 	if (map_start(data, type))
@@ -70,7 +70,7 @@ int	pars_line(char *line, t_data *data)
 
 	if (!line || !data)
 		return (1);
-	if (pars_line_helper(line, &type, &path, data) != 0)
+	if (pars_line_helper(line, &type, &path) != 0)
 		return (1);
 	temp = path;
 	path = ft_strtrim(path, " ");

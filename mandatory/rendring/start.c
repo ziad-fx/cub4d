@@ -6,13 +6,13 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 16:38:14 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/26 17:45:09 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 18:15:36 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ex_cub.h"
 
-void	ft_print_error(char *s)
+void	ft_error(char *s)
 {
 	write (2, s, ft_strlen(s));
 	write(2, "\n", 1);
