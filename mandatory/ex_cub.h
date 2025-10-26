@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 12:38:24 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/27 00:17:19 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/27 00:39:57 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -124,7 +124,7 @@ typedef struct s_player
 # define EAST  3
 # define MAX_DEST 70.0
 # define VIEW  60.0
-# define SPEED 0.12
+# define SPEED 0.08
 # define WIDTH 800
 # define HEIGHT 500
 # define OBJECT 24
@@ -159,7 +159,7 @@ void	horizontal_ray(t_player *player);
 void	draw_ray(t_pixel *pixel, int ray_x, int ray_y, int color);
 void	drawing_wall(t_player *player, t_pixel *pixel, int i, double ray_angle);
 double	calculate_distance(double px, double py, double dx, double dy);
-void	exit_all(t_player *player, int f);
+void	exit_all(t_player *player, int f, char *s);
 int		is_wall(t_data *data, double x, double y);
 
 int		load_texture(t_player *player);

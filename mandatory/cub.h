@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 12:39:00 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/26 22:36:59 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/27 00:43:04 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,7 +123,6 @@ int		pars_map(char *line, t_data *data);
 int		pars_line_helper(char *line, int *type, char **path);
 int		valid_map(t_data *data);
 int		valid_chars(char *line, int *player, int flag);
-int		all_walls(char *line);
 int		map_closed(t_data *data);
 int		check_num(char *num);
 int		valid_space(char **holder);

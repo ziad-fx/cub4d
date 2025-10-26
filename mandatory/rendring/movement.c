@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 17:02:01 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/27 00:17:43 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/27 00:41:21 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,9 +54,9 @@ void	go_backward(t_player *player)
 void	turn(t_player	*player, int rl)
 {
 	if (rl == 1)
-		player->radiant -= degree_to_radiant(8);
+		player->radiant -= degree_to_radiant(5);
 	else
-		player->radiant += degree_to_radiant(8);
+		player->radiant += degree_to_radiant(5);
 }
 
 void	left_right(t_player	*player, int rl)
