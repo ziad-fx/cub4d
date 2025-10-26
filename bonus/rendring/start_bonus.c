@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 16:38:14 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/27 00:27:48 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/27 00:28:12 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,5 @@ int	start(t_data *data)
 	draw_map_bonus(&pixel, &new_mlx, &player, &new_pixel);
 	mlx_action(&player);
 	mlx_loop(new_mlx.mlx);
-	exit_all(&player, 0, NULL);
 	return (0);
 }

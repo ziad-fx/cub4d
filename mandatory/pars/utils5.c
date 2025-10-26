@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 12:11:31 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 20:16:18 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/27 00:31:39 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	check_num(char *num)
 	while (num[i])
 	{
 		if (!ft_isdigit(num[i]))
-			return (1);
+			return (ft_error("only digit are allowed"), 1);
 		counter++;
 		i++;
 	}
