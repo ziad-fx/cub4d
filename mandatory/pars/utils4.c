@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 17:52:31 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 19:44:37 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 19:49:43 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,9 @@ int	map_start(t_data *data, int type)
 		if (type == 10)
 			empty_line = 1;
 		if (empty_line && type == 8)
-			return (1);
+			return (ft_error("map postion error"), 1);
 		if (type != 8 && type != 10)
-			return (1);
+			return (ft_error("map should be last"), 1);
 	}
 	return (0);
 }
