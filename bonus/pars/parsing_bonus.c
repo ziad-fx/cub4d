@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 10:59:54 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 18:45:41 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 20:09:17 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,13 @@ int	valid_map(t_data *data)
 	while (index < data->map_lines)
 	{
 		if (valid_chars(data->maps[index], &player_der, 1) != 0)
-			return (1);
+			return (ft_error("invalid character"), 1);
 		index++;
 	}
 	if (player_der != 1)
-		return (1);
+		return (ft_error("player less or greater than one"), 1);
 	if (valid_dor(data) != 0)
-		return (1);
+		return (ft_error("door position invalid"), 1);
 	if (map_closed(data) != 0)
 		return (1);
 	return (0);
@@ -80,7 +80,7 @@ int	pars_line(char *line, t_data *data)
 	if ((type >= 2 && type <= 5) || type == 9)
 	{
 		if (is_valid_extension(path, ".xpm") != 0)
-			return (free(path), 1);
+			return (ft_error("invalid texture"), free(path), 1);
 	}
 	if (type == 8)
 		data->map_lines++;
@@ -98,7 +98,7 @@ int	open_read(t_data *data, char *file_name, int flag)
 	if (!data || !file_name)
 		return (1);
 	if (is_valid_extension(file_name, ".cub") != 0)
-		return (1);
+		return (ft_error("File map does not exist!"), 1);
 	fd = open(file_name, O_RDONLY);
 	if (fd == -1)
 		return (write(2, "open faild \n", 13), 1);
@@ -115,7 +115,7 @@ int	open_read(t_data *data, char *file_name, int flag)
 	}
 	close(fd);
 	if (valid_file(data) == 1)
-		return (1);
+		return (ft_error("texture does not found"), 1);
 	return (0);
 }
 

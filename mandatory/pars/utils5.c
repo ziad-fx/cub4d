@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 12:11:31 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 17:45:23 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 20:16:18 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	check_num(char *num)
 		i++;
 	}
 	if (counter > 3)
-		return (1);
+		return (ft_error("0 to 255 max"), 1);
 	return (0);
 }
 
@@ -49,9 +49,9 @@ void	extract_rgb(char **holder, int *r, int *g, int *b)
 int	first_last_line(int x, t_data *data)
 {
 	if (x == 0 && (valid_chars(data->maps[x], NULL, 2) != 0))
-		return (1);
+		return (ft_error("invalid character"), 1);
 	if (x + 1 == data->map_index
 		&& (valid_chars(data->maps[x], NULL, 2) != 0))
-		return (1);
+		return (ft_error("invalid character"), 1);
 	return (0);
 }

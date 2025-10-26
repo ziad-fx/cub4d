@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 10:59:57 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 17:46:21 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 19:55:06 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ int	main(int ac, char **av)
 	t_data	*data;
 
 	if (ac != 2)
-		return (print_error());
+		return (ft_error("invalid argument"), print_error());
 	data = ft_calloc(1, sizeof(t_data));
 	if (!data)
 		return (print_error());

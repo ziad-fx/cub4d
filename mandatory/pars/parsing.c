@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 10:59:54 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 19:45:42 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 20:09:24 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,7 +113,7 @@ int	open_read(t_data *data, char *file_name, int flag)
 	}
 	close(fd);
 	if (valid_file(data) == 1)
-		return (ft_error("teaxture does not found"), 1);
+		return (ft_error("texture does not found"), 1);
 	return (0);
 }
 
