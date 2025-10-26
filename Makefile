@@ -122,7 +122,7 @@ fclean_bonus: clean_bonus
 	rm -f $(NAME_BONUS)
 
 fclean: clean
-	rm -f $(NAME) $(NAME_BONUS)
+	rm -f $(NAME)
 
 re: fclean all
 
