@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parsing_helper.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
+/*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:59:45 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 18:57:59 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 20:50:17 by zyahansa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	store_no_so_path(int type, t_data *data, char *path)
 	if (type == 2)
 	{
 		if (data->found.found_no == 1)
-			return (1);
+			return (ft_error("duplicated no path"), 1);
 		data->found.found_no = 1;
 		data->no_path = ft_strdup(path);
 		if (!data->no_path)
@@ -43,7 +43,7 @@ int	store_no_so_path(int type, t_data *data, char *path)
 	else if (type == 3)
 	{
 		if (data->found.found_so == 1)
-			return (1);
+			return (ft_error("duplicated so path"), 1);
 		data->found.found_so = 1;
 		data->so_path = ft_strdup(path);
 		if (!data->so_path)
@@ -57,7 +57,7 @@ int	store_we_ea_path(int type, t_data *data, char *path)
 	if (type == 4)
 	{
 		if (data->found.found_we == 1)
-			return (1);
+			return (ft_error("duplicated we path"), 1);
 		data->found.found_we = 1;
 		data->we_path = ft_strdup(path);
 		if (!data->we_path)
@@ -66,7 +66,7 @@ int	store_we_ea_path(int type, t_data *data, char *path)
 	else if (type == 5)
 	{
 		if (data->found.found_ea == 1)
-			return (1);
+			return (ft_error("duplicated ea path"), 1);
 		data->found.found_ea = 1;
 		data->ea_path = ft_strdup(path);
 		if (!data->ea_path)

@@ -6,7 +6,7 @@
 /*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 17:02:32 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 20:41:05 by zyahansa         ###   ########.fr       */
+/*   Updated: 2025/10/26 20:58:20 by zyahansa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,8 +91,6 @@ int	map_closed(t_data *data)
 		{
 			if (map_closed_helper(x, y, data) == 1)
 				return (ft_error("invalid character"), 1);
-				// return (1);
-
 			y++;
 		}
 	}
