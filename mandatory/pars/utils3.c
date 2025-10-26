@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils3.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
+/*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 17:02:32 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 19:40:52 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 20:41:05 by zyahansa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,15 +82,17 @@ int	map_closed(t_data *data)
 		y = 0;
 		if (data->maps[x][0] != '1' && (data->maps[x][0] != ' '
 			&& data->maps[x][0] != '\t'))
-			return (ft_error("invalid character"), 1);
+			return (ft_error("invalid character in boundary"), 1);
 		if (data->maps[x][ft_strlen(data->maps[x]) - 1] != '1'
 			&& data->maps[x][ft_strlen(data->maps[x]) - 1] != ' '
 			&& data->maps[x][ft_strlen(data->maps[x]) - 1] != '\t')
-			return (ft_error("invalid character"), 1);
+			return (ft_error("invalid character in boundary"), 1);
 		while (data->maps[x][y])
 		{
 			if (map_closed_helper(x, y, data) == 1)
 				return (ft_error("invalid character"), 1);
+				// return (1);
+
 			y++;
 		}
 	}
