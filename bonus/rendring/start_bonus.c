@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 16:38:14 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/27 00:26:20 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/27 00:27:48 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,8 @@ int	start(t_data *data)
 	set_zero(&player);
 	find_player_position(&player);
 	new_mlx.mlx = mlx_init();
+	if (new_mlx.mlx == NULL)
+		exit_all(&player, 1, "MLX inital field");
 	new_mlx.win_mlx = mlx_new_window(new_mlx.mlx, WIDTH, HEIGHT, "cub3d");
 	player.mlx = &new_mlx;
 	if (load_texture(&player) == 1)
