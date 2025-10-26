@@ -94,7 +94,7 @@ OBJS = $(SRCS:.c=.o)
 NAME = cub3D
 NAME_BONUS = cub3D_bonus
 HEADER = mandatory/cub.h mandatory/ex_cub.h
-HEADER2 = bonus/ex_cub.h bonus/cub.h
+HEADER2 = bonus/ex_cub_bonus.h bonus/cub_bonus.h
 
 all: $(NAME)
 

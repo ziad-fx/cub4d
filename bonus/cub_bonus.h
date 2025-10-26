@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 12:39:00 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/26 22:33:26 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 22:35:02 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,7 +106,6 @@ typedef struct s_data
 
 int		main(int ac, char **av);
 int		open_read(t_data *data, char *file_name, int flag);
-int		check_file(char *line);
 int		pars_line(char *line, t_data *data);
 int		store_data(int type, t_data *data, char *path);
 int		is_valid_extension(char *path, char *name);
@@ -123,7 +122,6 @@ int		pars_map(char *line, t_data *data);
 int		pars_line_helper(char *line, int *type, char **path);
 int		valid_map(t_data *data);
 int		valid_chars(char *line, int *player, int flag);
-int		all_walls(char *line);
 int		map_closed(t_data *data);
 int		check_num(char *num);
 int		valid_space(char **holder);
@@ -167,11 +165,9 @@ void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_bzero(void *s, size_t n);
 char	*ft_strtrim(char *s1, char *set);
-void	freemyhomie(char **str);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
-char	*ft_itoa(int n);
 char	*ft_strncpy(char *dest, char *src, unsigned int n);
 int		start(t_data *data);
 

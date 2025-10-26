@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 12:38:24 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/26 22:33:07 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 22:35:54 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,11 +123,6 @@ typedef struct s_player
 # define SOTH  2
 # define EAST  3
 # define MAX_DEST 70.0
-# define P_COLOR	0xffFF00
-# define G_COLOR	0xffffff00
-# define W_COLOR	0x222222
-# define L_COLOR 0x0000FF
-# define RED_COLOR 0xFF0000
 # define VIEW  60.0
 # define SPEED 0.18
 # define WIDTH 800
