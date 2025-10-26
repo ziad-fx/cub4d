@@ -1,18 +1,17 @@
 
- SO     textures/so.xpm	
+ SO     textures/so.xpm
 	NO textures/no.xpm
 
-WE textures/we.xpm 
+WE textures/we.xpm
 EA textures/ea.xpm
-DOOR textures/DOOR.xpm								
+DOOR textures/DOOR.xpm							
 
 C 0,0,0
 F 109, 11, 214
 
-
-11111111111    
-100001D1001
-10000000001
-10000000100
-10000000N01
+11111111111111
+100111001D1001
+1000000000111
+10000000101
+10000000S01
 11111111111
