@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 17:19:41 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 22:31:33 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 23:33:38 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	display_animation(t_player *player, int *counter)
 	if (!player->data->frames[player->data->cur_frame])
 		return ;
 	(*counter)++;
-	if (*counter >= 1)
+	if (*counter >= 5)
 	{
 		player->data->cur_frame = (player->data->cur_frame + 1)
 			% player->data->frame_count;

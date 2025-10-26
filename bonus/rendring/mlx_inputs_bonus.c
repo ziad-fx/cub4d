@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 15:44:42 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/26 22:31:36 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 23:46:32 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int	free_text(t_player *player)
 void	exit_all(t_player *player, int f)
 {
 	if (f == 1)
-		print_error();
+		write(2, "error\n", 7);
 	if (player->new_pixel->img)
 		mlx_destroy_image(player->mlx->mlx, player->new_pixel->img);
 	if (player->pixel->img)
@@ -99,7 +99,6 @@ int	render(t_player *player)
 
 	mlx_clear_window(player->mlx->mlx, player->mlx->win_mlx);
 	draw_map_bonus(player->pixel, player->mlx, player, player->new_pixel);
-	frame_counter++;
 	if (player->pixel->img)
 	{
 		mlx_destroy_image(player->mlx->mlx, player->pixel->img);

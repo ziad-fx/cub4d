@@ -1,10 +1,10 @@
 
- SO     textures/so.xpm
-	NO textures/no.xpm
+ SO     textures/text.xpm
+	NO textures/text.xpm
 
-WE textures/we.xpm
-EA textures/ea.xpm
-DOOR textures/DOOR.xpm							
+WE textures/text.xpm
+EA textures/text.xpm
+DOOR textures/door.xpm							
 
 C 0,0,0
 F 109, 11, 214

@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 10:21:17 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 22:31:30 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 23:20:45 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static int	load_texture_no(t_player *player)
 	player->data->no_address = mlx_get_data_addr(player->data->no_texture,
 			&player->data->tex_bpp, &player->data->tex_line_len,
 			&player->data->tex_endian);
-	if (!player->data->no_texture || !player->data->no_address)
+	if (!player->data->no_address)
 		return (1);
 	return (0);
 }
@@ -74,7 +74,7 @@ static int	load_texture_ea(t_player *player)
 
 int	load_texture(t_player *player)
 {
-	free_text(player);
+	// free_text(player);
 	if (load_texture_no(player) == 1)
 		exit_all(player, 1);
 	if (load_texture_so(player) == 1)

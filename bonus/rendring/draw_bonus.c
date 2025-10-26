@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 16:55:07 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/26 22:31:41 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/27 00:01:23 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,7 +113,6 @@ void	draw_map_in_two_dimension(t_pixel *pixel, t_player *player)
 int	draw_map_bonus(t_pixel *pixel, t_mlx *new_mlx,
 	t_player *player, t_pixel *new_pixel)
 {
-	free_text(player);
 	new_pixel->img = mlx_new_image(new_mlx->mlx, M_SIZE, M_SIZE);
 	new_pixel->addr = mlx_get_data_addr(new_pixel->img,
 			&new_pixel->bits_per_pixel,
@@ -121,7 +120,6 @@ int	draw_map_bonus(t_pixel *pixel, t_mlx *new_mlx,
 	pixel->img = mlx_new_image(new_mlx->mlx, WIDTH, HEIGHT);
 	pixel->addr = mlx_get_data_addr(pixel->img, &pixel->bits_per_pixel,
 			&pixel->line_length, &pixel->endian);
-	load_texture(player);
 	player_view(pixel, player);
 	draw_map_in_two_dimension(new_pixel, player);
 	draw_player_on_minimap(new_pixel);

@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 12:38:24 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/26 22:35:54 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 23:32:25 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -124,7 +124,7 @@ typedef struct s_player
 # define EAST  3
 # define MAX_DEST 70.0
 # define VIEW  60.0
-# define SPEED 0.18
+# define SPEED 0.1
 # define WIDTH 800
 # define HEIGHT 500
 # define OBJECT 24
