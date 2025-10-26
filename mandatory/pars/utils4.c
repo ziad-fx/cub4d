@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 17:52:31 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 17:46:00 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 19:44:37 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,10 +71,10 @@ int	map_closed_helper(int x, int y, t_data *data)
 		|| (zero_next_to_space(data, x, y) == 1))
 	{
 		if (data->maps[x][y] == '0')
-			return (1);
+			return (printf("%s\n", data->maps[x]), 1);
 		if (data->maps[x][y] == 'N' || data->maps[x][y] == 'E'
 			|| data->maps[x][y] == 'S' || data->maps[x][y] == 'W')
-			return (1);
+			return (printf("%s\n", data->maps[x]), 1);
 	}
 	return (0);
 }

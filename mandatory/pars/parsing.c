@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 10:59:54 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 19:03:50 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 19:45:42 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,6 @@ int	pars_map(char *line, t_data *data)
 		if (init_map(data))
 			return (1);
 		data->maps[data->map_index] = ft_strdup(line);
-		printf("%s\n", line);
 		if (!data->maps[data->map_index])
 			return (1);
 		data->map_index++;

@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 15:01:48 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 17:45:23 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 19:45:00 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,7 @@ int	load_door(t_player *player)
 			player->data->door_path,
 			&player->data->door_tex_width, &player->data->door_tex_height);
 	if (!player->data->door_texture)
-	{
-		printf("ddddd\n");
 		return (1);
-	}
 	player->data->door_address = mlx_get_data_addr(player->data->door_texture,
 			&player->data->door_tex_bpp, &player->data->door_tex_line_len,
 			&player->data->door_tex_endian);
