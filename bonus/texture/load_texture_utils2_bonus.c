@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   load_texture_utils2_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 10:21:17 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 14:57:57 by zyahansa         ###   ########.fr       */
+/*   Updated: 2025/10/26 17:50:46 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/ex_cub.h"
+#include "../ex_cub.h"
 
 static int	load_texture_no(t_player *player)
 {
@@ -71,8 +71,6 @@ static int	load_texture_ea(t_player *player)
 		return (1);
 	return (0);
 }
-
-
 
 int	load_texture(t_player *player)
 {

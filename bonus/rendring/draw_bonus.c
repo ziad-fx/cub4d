@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   draw_bonus.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 16:55:07 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/26 13:57:06 by zyahansa         ###   ########.fr       */
+/*   Updated: 2025/10/26 17:45:23 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/ex_cub.h"
+#include "../ex_cub.h"
 
 void	draw_square_m(t_pixel *pixel, double x_pos,
 		double y_pos, t_mini_data data)

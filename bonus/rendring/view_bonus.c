@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   view.c                                             :+:      :+:    :+:   */
+/*   view_bonus.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 15:26:12 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/20 13:44:01 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 17:45:23 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/ex_cub.h"
+#include "../ex_cub.h"
 
 void	check_deistance(t_player *player, double h_distance, double v_distance)
 {

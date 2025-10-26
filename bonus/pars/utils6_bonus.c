@@ -6,11 +6,11 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 15:40:29 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/21 18:11:09 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 17:46:34 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ex_cub.h"
+#include "../ex_cub.h"
 
 int	door_next_space(t_data *data, int x, int y)
 {

@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   load_text_utils.c                                  :+:      :+:    :+:   */
+/*   load_text_utils_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 17:19:41 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/20 13:44:01 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 17:45:23 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/ex_cub.h"
+#include "../ex_cub.h"
 
 int	load_text_animation(t_player *player)
 {
 	int		i;
-	char	frames[3][50];
+	char	frames[3][200];
 
 	i = 0;
 	ft_strcpy1(frames[0], "textures/frame1.xpm");

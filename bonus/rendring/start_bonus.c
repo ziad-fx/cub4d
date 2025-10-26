@@ -3,14 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   start_bonus.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 16:38:14 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/26 13:13:58 by zyahansa         ###   ########.fr       */
+/*   Updated: 2025/10/26 17:45:23 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/ex_cub.h"
+#include "../ex_cub.h"
+
+void	ft_print_error(char *s)
+{
+	write (2, s, ft_strlen(s));
+	write(2, "\n", 1);
+}
 
 int	destroy(t_player *player)
 {

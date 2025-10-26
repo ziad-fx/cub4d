@@ -6,11 +6,11 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 17:02:32 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/21 19:56:46 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 17:45:23 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/ex_cub.h"
+#include "../ex_cub.h"
 
 int	check_surrounded(t_data *data, int x, int y)
 {

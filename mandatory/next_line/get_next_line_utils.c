@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 13:44:24 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 10:56:08 by zyahansa         ###   ########.fr       */
+/*   Updated: 2025/10/26 17:46:00 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/cub.h"
+#include "../cub.h"
 
 size_t	ft_strlen1(const char *s)
 {

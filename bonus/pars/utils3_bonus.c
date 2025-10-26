@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   utils3_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/30 17:02:32 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 15:18:14 by zyahansa         ###   ########.fr       */
+/*   Updated: 2025/10/26 17:46:01 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/cub.h"
+#include "../cub.h"
 
 int	check_surrounded(t_data *data, int x, int y)
 {

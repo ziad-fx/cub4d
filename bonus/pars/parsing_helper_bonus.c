@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   parsing_helper_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:59:45 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 14:35:52 by zyahansa         ###   ########.fr       */
+/*   Updated: 2025/10/26 17:45:23 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/ex_cub.h"
+#include "../ex_cub.h"
 
 int	start_parsing(char *line, t_data *data, int fd, int flag)
 {

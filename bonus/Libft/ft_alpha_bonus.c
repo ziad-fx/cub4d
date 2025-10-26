@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_alpha_bonus.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/21 11:00:48 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/21 15:53:02 by zyahansa         ###   ########.fr       */
+/*   Updated: 2025/10/26 17:46:00 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/cub.h"
+#include "../cub.h"
 
 int	ft_isalpha(int c)
 {

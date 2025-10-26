@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 13:43:59 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 10:56:12 by zyahansa         ###   ########.fr       */
+/*   Updated: 2025/10/26 17:46:00 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/cub.h"
+#include "../cub.h"
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {

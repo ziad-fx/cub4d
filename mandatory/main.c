@@ -6,11 +6,11 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 10:59:57 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/20 14:16:26 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 17:45:36 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/cub.h"
+#include "cub.h"
 
 void	ft_bzero(void *s, size_t n)
 {

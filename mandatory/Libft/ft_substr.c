@@ -6,11 +6,11 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 15:40:12 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/20 13:44:14 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 17:46:00 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/cub.h"
+#include "../cub.h"
 
 char	*substr(char *str, int *len, char c)
 {

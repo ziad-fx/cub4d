@@ -93,8 +93,8 @@ B_OBJS = $(B_SRCS:.c=.o)
 OBJS = $(SRCS:.c=.o)
 NAME = cub3D
 NAME_BONUS = cub3D_bonus
-HEADER = include/cub.h
-HEADER2 = include/ex_cub.h
+HEADER = mandatory/cub.h mandatory/ex_cub.h
+HEADER2 = bonus/ex_cub.h bonus/cub.h
 
 all: $(NAME)
 
@@ -106,13 +106,24 @@ $(NAME): $(OBJS)
 $(NAME_BONUS): $(B_OBJS)
 	$(CC) $(CFLAGS) $(MLX_FLAG) $(B_OBJS) $(LDFLAGS) $(LIBS_TO_LINK) -o $(NAME_BONUS)
 
-%.o: %.c $(HEADER) $(HEADER2)
+mandatory/%.o: mandatory/%.c $(HEADER)
 	$(CC) $(CFLAGS) -c $< -o $@
 
+bonus/%.o: bonus/%.c $(HEADER2)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean_bonus:
+	rm -f $(B_OBJS)
+
 clean:
-	rm -f $(OBJS) $(B_OBJS)
+	rm -f $(OBJS)
+
+fclean_bonus: clean_bonus
+	rm -f $(NAME_BONUS)
 
 fclean: clean
 	rm -f $(NAME) $(NAME_BONUS)
 
 re: fclean all
+
+re_bonus: fclean_bonus bonus

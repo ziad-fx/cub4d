@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   parsing_bonus.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 10:59:54 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 15:22:36 by zyahansa         ###   ########.fr       */
+/*   Updated: 2025/10/26 17:46:01 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/cub.h"
-#include "../../include/ex_cub.h"
+#include "../cub.h"
+#include "../ex_cub.h"
 
 int	valid_map(t_data *data)
 {
