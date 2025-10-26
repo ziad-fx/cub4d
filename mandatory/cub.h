@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 12:39:00 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/26 18:43:30 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 22:36:59 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -166,11 +166,9 @@ void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_bzero(void *s, size_t n);
 char	*ft_strtrim(char *s1, char *set);
-void	freemyhomie(char **str);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
-char	*ft_itoa(int n);
 char	*ft_strncpy(char *dest, char *src, unsigned int n);
 int		start(t_data *data);
 

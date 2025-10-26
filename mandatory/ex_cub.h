@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 12:38:24 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/26 18:16:06 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/26 22:36:38 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,11 +123,6 @@ typedef struct s_player
 # define SOTH  2
 # define EAST  3
 # define MAX_DEST 70.0
-# define P_COLOR	0xffFF00
-# define G_COLOR	0xffffff00
-# define W_COLOR	0x222222
-# define L_COLOR 0x0000FF
-# define RED_COLOR 0xFF0000
 # define VIEW  60.0
 # define SPEED 0.18
 # define WIDTH 800
@@ -137,7 +132,6 @@ typedef struct s_player
 # define M_INT_MAX 2147483646
 
 int		free_text(t_player *player);
-void	pixels_free(t_pixel *pixels, t_mlx *mlx);
 int		draw_map_bonus(t_pixel *pixel, t_mlx *new_mlx,
 			t_player *player, t_pixel *new_pixel);
 int		draw_map(t_pixel *pixel, t_mlx *new_mlx, t_player *player);
