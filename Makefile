@@ -1,5 +1,5 @@
 CC = cc
-CFLAGS = -Wall -Werror -Wextra  #-fsanitize=address -g3
+CFLAGS = -Wall -Werror -Wextra
 MLX_FLAG = -lmlx -framework OpenGL -framework AppKit -lm
 SRCS2 = \
 	mandatory/rendring/start.c\
