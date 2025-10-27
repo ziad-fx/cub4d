@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 12:18:12 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/27 11:30:16 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/27 11:39:30 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,7 +107,7 @@ int	convert_to_rgb(char *color)
 	if (count_word(holder) != 3 || valid_space(holder) == 1)
 	{
 		free_holder(holder);
-		return (-1);
+		return (ft_error("Invalid RGB color..."), -1);
 	}
 	while (++rgb.i < 3)
 		remove_space(holder[rgb.i]);
