@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 12:18:12 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/26 22:30:38 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/27 11:30:16 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int	pars_line_helper(char *line, int *type, char **path)
 	if (!*path)
 		return (1);
 	if (*type == 1)
-		return (ft_error("invalid character"), 1);
+		return (ft_error("invalid character"), free(*path), 1);
 	return (0);
 }
 

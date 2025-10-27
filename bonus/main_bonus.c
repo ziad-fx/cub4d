@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 10:59:57 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/27 10:53:22 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/27 11:23:56 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,11 +44,14 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero(ptr, total_size);
 	return (ptr);
 }
-
+void	f()
+{
+	system("leaks cub3D_bonus");
+}
 int	main(int ac, char **av)
 {
 	t_data	*data;
-
+	atexit(f);
 	if (ac != 2)
 		return (ft_error("invalid argument"), print_error());
 	data = ft_calloc(1, sizeof(t_data));
