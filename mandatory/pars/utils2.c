@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils2.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
+/*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 12:18:12 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/27 11:39:19 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/29 18:27:14 by zyahansa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,7 +102,7 @@ int	convert_to_rgb(char *color)
 	if (!holder)
 		return (1);
 	if (count_comma(color) == 1)
-		return (-1);
+		return (free_holder(holder), -1);
 	if (count_word(holder) != 3 || valid_space(holder) == 1)
 	{
 		free_holder(holder);

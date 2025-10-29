@@ -6,7 +6,7 @@
 /*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 12:18:03 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/27 11:47:07 by zyahansa         ###   ########.fr       */
+/*   Updated: 2025/10/28 12:49:12 by zyahansa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	store_data(int type, t_data *data, char *path)
 	else if (store_we_ea_path(type, data, path) == 1)
 		return (1);
 	else if (store_f_c_path(type, data, path) == 1)
-		return (1);
+		return (ft_error("F / C line invalid"), 1);
 	else if (type == 9)
 	{
 		if (data->found.found_door == 1)
