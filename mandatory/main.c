@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 10:59:57 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/30 11:59:26 by zyahansa         ###   ########.fr       */
+/*   Updated: 2025/10/30 16:34:43 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,11 +44,15 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero(ptr, total_size);
 	return (ptr);
 }
-
+void	f()
+{
+	system("lsof -c cub3D");
+}
 int	main(int ac, char **av)
 {
 	t_data	*data;
 
+	atexit(f);
 	if (ac != 2)
 		return (ft_error("invalid argument"), print_error());
 	data = ft_calloc(1, sizeof(t_data));

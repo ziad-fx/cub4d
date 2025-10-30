@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 15:44:42 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/27 00:37:50 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/30 16:44:31 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 int	free_text(t_player *player)
 {
+	// int	i;
+
 	if (player->data->no_texture)
 		mlx_destroy_image(player->mlx->mlx, player->data->no_texture);
 	if (player->data->so_texture)
@@ -26,6 +28,9 @@ int	free_text(t_player *player)
 	player->data->ea_texture = NULL;
 	player->data->so_texture = NULL;
 	player->data->no_texture = NULL;
+	i = 1023;
+	while (i-- > 3)
+		close(i);
 	return (0);
 }
 
@@ -35,8 +40,8 @@ void	exit_all(t_player *player, int f, char *s)
 		ft_error(s);
 	if (player->pixel->img)
 		mlx_destroy_image(player->mlx->mlx, player->pixel->img);
-	free_text(player);
 	mlx_destroy_window(player->mlx->mlx, player->mlx->win_mlx);
+	free_text(player);
 	free_data(player->data);
 	exit(f);
 }

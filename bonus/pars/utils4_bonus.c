@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils4_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/31 17:52:31 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/27 11:47:18 by zyahansa         ###   ########.fr       */
+/*   Updated: 2025/10/30 16:32:50 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,9 @@ void	free_data(t_data *data)
 	free(data->we_path);
 	free(data->door_path);
 	free(data);
+	i = 1023;
+	while (i-- > 3)
+		close(i);
 }
 
 int	map_start(t_data *data, int type)

@@ -6,7 +6,7 @@
 /*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 16:43:27 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/26 22:31:34 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/30 16:18:49 by aferryat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,9 +53,9 @@ void	set_player_position_and_degree(t_player *player, char c, int j, int i)
 	if (c == 'N')
 		player->radiant = degree_to_radiant(270);
 	else if (c == 'S')
-		player->radiant = degree_to_radiant(180);
-	else if (c == 'W')
 		player->radiant = degree_to_radiant(90);
+	else if (c == 'W')
+		player->radiant = degree_to_radiant(180);
 	else if (c == 'E')
 		player->radiant = degree_to_radiant(0);
 }
