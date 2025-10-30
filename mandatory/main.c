@@ -6,7 +6,7 @@
 /*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/24 10:59:57 by zyahansa          #+#    #+#             */
-/*   Updated: 2025/10/29 17:42:46 by zyahansa         ###   ########.fr       */
+/*   Updated: 2025/10/30 11:59:26 by zyahansa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,12 +45,9 @@ void	*ft_calloc(size_t count, size_t size)
 	return (ptr);
 }
 
-void f(void){system("leaks cub3D  ");}
-
 int	main(int ac, char **av)
 {
 	t_data	*data;
-	atexit(f);
 
 	if (ac != 2)
 		return (ft_error("invalid argument"), print_error());

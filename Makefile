@@ -101,10 +101,10 @@ all: $(NAME)
 bonus: $(NAME_BONUS)
 
 $(NAME): $(OBJS) 
-	$(CC) $(CFLAGS) $(MLX_FLAG) $(OBJS) $(LDFLAGS) $(LIBS_TO_LINK) -o $(NAME)
+	$(CC) $(CFLAGS) $(MLX_FLAG) $(OBJS) -o $(NAME)
 
 $(NAME_BONUS): $(B_OBJS)
-	$(CC) $(CFLAGS) $(MLX_FLAG) $(B_OBJS) $(LDFLAGS) $(LIBS_TO_LINK) -o $(NAME_BONUS)
+	$(CC) $(CFLAGS) $(MLX_FLAG) $(B_OBJS) -o $(NAME_BONUS)
 
 mandatory/%.o: mandatory/%.c $(HEADER)
 	$(CC) $(CFLAGS) -c $< -o $@

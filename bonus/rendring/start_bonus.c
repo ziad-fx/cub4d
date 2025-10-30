@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   start_bonus.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aferryat <aferryat@student.42.fr>          +#+  +:+       +#+        */
+/*   By: zyahansa <zyahansa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 16:38:14 by aferryat          #+#    #+#             */
-/*   Updated: 2025/10/27 00:48:30 by aferryat         ###   ########.fr       */
+/*   Updated: 2025/10/30 11:59:53 by zyahansa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,8 +54,7 @@ int	start(t_data *data)
 	if (!new_mlx.win_mlx)
 		exit_all(&player, 1, "Window failed");
 	player.mlx = &new_mlx;
-	if (load_texture(&player) == 1)
-		return (1);
+	load_texture(&player);
 	draw_map_bonus(&pixel, &new_mlx, &player, &new_pixel);
 	mlx_action(&player);
 	mlx_loop(new_mlx.mlx);
